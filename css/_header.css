@@ -1,0 +1,11 @@
+.socials{
+    display: flex;
+}
+
+.socials__link--gray{
+    color: gray;
+}
+
+.socials__link--green{
+    color: green;
+}
