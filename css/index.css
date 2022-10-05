@@ -2,4 +2,13 @@
 @import "_var.css";
 @import "_header.css";
 @import "_footer.css";
+@import "_layout.css";
 @import "home-page/_home-page.css";
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend', sans-serif;
+}
+

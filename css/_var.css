@@ -6,4 +6,13 @@ TODO: додати шрифти і заповнити кольори перем�
     --primary-color: #4FA083;
     --text-primary-color: #1F2533;
     --text-secondary-color: #70737C;
+    --white-color: #ffffff;
+    --green-brand-colot: #359740;
+    --light-grey-stroke-color: #EFEFEF;
+    --light-geen-color: #EAF1EB;
+    --yellow-color: #FFCF55;
+    --light-blue: #EFF2F8;
+    --invisible-green-color: rgba(53, 151, 64, 0.08);
+    --danger-color: #E55C5C;
+    --hover-color: #2BB159;
 }
