@@ -1,9 +1,14 @@
 .container{
     width: 100%;
-    max-width: 1115px;
+    max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.row{
+    display: flex;
+}
+
 
 .no-list-style{
     list-style: none;

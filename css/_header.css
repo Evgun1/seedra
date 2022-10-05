@@ -1,81 +1,108 @@
-.socials{
-    display: flex;
-}
-
-.socials__link--gray{
-    color: gray;
-}
-
-.socials__link--green{
-    color: green;
-}
-.header{
-    padding: 6px 0;
+.header {
+    padding: 12px 0;
     height: 72px;
-    box-shadow: 0px 4px 12px rgba(207, 207, 207, 0.25);
+    box-shadow: 0 4px 12px rgba(207, 207, 207, 0.25);
 }
 
-.header .container{
-    display: flex;
-    align-items: center ;
-    margin: 0 auto;
+.header__row{
+    gap: 13px;
+    align-items: center;
 }
-.header__logo{
+
+.header__logo {
     display: block;
-  
+
 }
-.header__nav{
-    margin-left: 64px;
+.header__nav {
+    flex-grow: 1;
 }
 
-.main-nav{
+.main-nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    gap: 32px;
+    /*gap: 32px;*/
 }
 
-.main-nav__link{
-    text-decoration: none; 
+.main-nav__item{
+    position: relative;
+    padding: 0 16px;
+}
+
+.main-nav__item::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 25px;
+    width: 1px;
+    background: var(--light-grey-stroke-color);
+    transform: translate(0, -50%);
+}
+.main-nav__link {
+    text-decoration: none;
     color: var(--text-secondary-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-}
-.socials{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    /*border-right: 1px solid var(--text-secondary-color);*/
 }
 
-.header__socials{
+.main-nav__link:hover{
+    color: var(--green-brand-colot);
+}
+
+
+.header__socials {
     gap: 13px;
-    margin-left: 45px;
+    /*margin-left: 45px;*/
 }
 
-.socials__link{
+.socials__link {
     text-decoration: none;
+    font-size: 24px;
 }
 
-.socials__link--gray{
+.socials__link--gray {
     color: var(--text-secondary-color);
 }
 
-.header__search{
-    margin: 0 15px;
+.socials__link--gray:hover{
+    color: var(--green-brand-colot);
+}
+
+.header__search {
+    /*margin: 0 15px;*/
     padding: 0;
 }
 
-.header__search input{
+.header__search input {
     border: 1px solid #EFEFEF;
-    border-radius: 71px;    
+    border-radius: 71px;
     width: 285px;
     height: 48px;
     left: 903px;
     top: 12px;
 }
 
-.header__actions{
+.header__actions {
     display: flex;
     gap: 25px;
 }
+
+.socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.socials__link--gray {
+    color: gray;
+}
+
+.socials__link--green {
+    color: green;
+}
+
