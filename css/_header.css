@@ -49,7 +49,7 @@
 }
 
 .main-nav__link:hover{
-    color: var(--green-brand-colot);
+    color: var(--green-brand-color);
 }
 
 
@@ -68,7 +68,7 @@
 }
 
 .socials__link--gray:hover{
-    color: var(--green-brand-colot);
+    color: var(--green-brand-color);
 }
 
 .header__search {
@@ -88,6 +88,15 @@
 .header__actions {
     display: flex;
     gap: 25px;
+    font-size: 24px;
+}
+
+.header-actions__wishlist{
+    color: var(--green-brand-color);
+}
+
+.header-actions__wishlist:hover{
+    color: black;
 }
 
 .socials {
@@ -106,3 +115,12 @@
     color: green;
 }
 
+.header__card{
+    color: var(--green-brand-color);
+    width: 24px;
+    height: 24px;
+}
+
+.header__card:hover{
+    color: black;
+}
