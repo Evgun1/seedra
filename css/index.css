@@ -5,11 +5,16 @@
 @import "_layout.css";
 @import "home-page/_home-page.css";
 
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     font-family: 'Lexend', sans-serif;
     margin: 0;
+    font-size: 20px;
+}
+
+.main {
+    padding-top: 32px;
 }
 

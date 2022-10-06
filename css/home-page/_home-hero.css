@@ -1,10 +1,14 @@
 .home-hero{
-    margin-top: 32px;
+    /*margin-top: 32px;*/
 }
 
 .main-hero__banner{
     position: relative;
-    background: var(--light-geen-color);
+    background-color: var(--light-geen-color);
+    background-image: url("../../assets/img/leave_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
     height: 455px;
     border-radius: 24px;
     padding: 48px 76px 52px;
@@ -16,7 +20,7 @@
     align-items: flex-start;
     justify-content: space-between;
     font-style: normal;
-    padding: 0px;
+    padding: 0;
     width: 650px;
 }
 
@@ -27,7 +31,7 @@
     line-height: 54px;
     margin: 0;
     color: var(--text-primary-color);
-    
+
 }
 
 .banner-frame__text{
@@ -42,7 +46,7 @@
 
 .banner-frame__price{
     gap: 12px;
-    width: 336px    
+    width: 336px
 }
 
 .banner__fier{

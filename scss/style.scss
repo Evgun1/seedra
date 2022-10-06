@@ -1,0 +1,29 @@
+body{
+	background: red;
+	color: green;
+}
+
+.main{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 32px;
+}
+
+
+ %pseudo-element{
+	position: absolute;
+	content: '';
+}
+
+
+.list-test{
+	&:before{
+		@extend %pseudo-element
+	}
+}
+
+.super-block{
+	&:after{
+		@extend %pseudo-element;
+	}
+}
