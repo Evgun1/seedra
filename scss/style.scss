@@ -1,29 +1,33 @@
-body{
-	background: red;
-	color: green;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+@import "./base/variables";
+
+@import "./blocks/socials";
+@import "./blocks/button";
+@import "./blocks/slides";
+
+* {
+	font-family: 'Lexend', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-.main{
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-gap: 32px;
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
+// .no-list-style {
+// 	list-style: none;
+// 	padding: 0;
+// 	margin: 0;
+// }
 
- %pseudo-element{
-	position: absolute;
-	content: '';
-}
-
-
-.list-test{
-	&:before{
-		@extend %pseudo-element
-	}
-}
-
-.super-block{
-	&:after{
-		@extend %pseudo-element;
-	}
-}
+@import "./blocks/header";
+@import "./blocks/home-page/home-hero";
+@import "./blocks/home-page/home-products";
+@import "./blocks/home-page/home-blogs";
+@import "./blocks/home-page/home-testimonials";
+@import "./blocks/home-page/home-banner";
+@import "./blocks/footer"

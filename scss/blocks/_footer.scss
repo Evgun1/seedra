@@ -1,0 +1,54 @@
+.footer {
+    box-shadow: 0px -7px 80px rgba(189, 189, 189, 0.25);
+    padding: 41px 0 28px 0;
+
+    &__nav {
+        gap: 75px;
+    }
+
+    &__list {
+        gap: 64px;
+        // list-style: none;
+    }
+
+    &__item {
+
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 178.19%;
+            color: $text-secondary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $green-brand-color;
+            }
+        }
+    }
+
+    &__line {
+        margin-top: 33px;
+        border: 1px solid $green-brand-color;
+        opacity: 0.3;
+    }
+
+    &__social {
+        justify-content: space-between;
+        margin-top: 19px;
+
+        ul {
+            gap: 24px;
+        }
+
+        div {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 178.19%;
+            color: $text-secondary-color;
+        }
+
+        a{
+            color: $green-brand-color;
+        }
+    }
+}

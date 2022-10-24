@@ -1,4 +1,0 @@
-body {background: red;color: green}
-.main {display: grid;grid-template-columns:repeat(12, 1fr);grid-gap: 32px}
-.super-block:after, .list-test:before {position: absolute;content: ""}
-/*# sourceMappingURL=style.css.map */

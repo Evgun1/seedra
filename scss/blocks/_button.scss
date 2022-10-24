@@ -1,0 +1,35 @@
+.button {
+    padding: 11px 33px;
+    background-color: $green-brand-color;
+    border-radius: 8px;
+    color: $white-color;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+
+    &:active {
+        background-color: $primary-color;
+    }
+}
+
+
+
+.button__transparent {
+    padding: 11px 33px;
+    background-color: $white-color;
+    border-radius: 8px;
+    color: $green-brand-color;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $invisible-green-color;
+    }
+
+    &:active {
+        background-color: $invisible-green-color;
+        border: 1px solid $green-brand-color;
+        border-radius: 8px;
+    }
+}

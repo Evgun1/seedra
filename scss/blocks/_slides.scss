@@ -1,0 +1,13 @@
+.sliders {
+    display: block;
+    background: #359740;
+    border-radius: 30px;
+    width: 35px;
+    height: 6px;
+
+    &-transparent {
+        background: #359740;
+        opacity: 0.2;
+        // border-radius: 30px;
+    }
+}

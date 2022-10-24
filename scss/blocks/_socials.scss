@@ -1,0 +1,14 @@
+.socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.socials--gray {
+    color: $text-secondary-color;
+}
+
+.socials--green {
+    color: $green-brand-color;
+}
