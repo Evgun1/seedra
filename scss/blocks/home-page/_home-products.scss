@@ -1,269 +1,301 @@
 .home-products {
-    padding-top: 58px;
+  padding-top: 58px;
 
-    &__title {
-        justify-content: space-between;
-        align-items: center;
+  &__title {
+    justify-content: space-between;
+    align-items: center;
 
-        a {
-            border: 1px solid #EFEFEF;
-            border-radius: 8px;
-        }
+    a {
+      border: 1px solid #EFEFEF;
+      border-radius: 8px;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    align-items: center;
+
+  }
+
+  &__link {
+    position: relative;
+    padding: 20px 0;
+    background-color: $white-color;
+    border: 2px solid #EFEFEF;
+    border-radius: 8px;
+    text-decoration: none;
+    color: $text-primary-color;
+    display: flex;
+    align-items: center;
+
+    svg {
+      color: $green-brand-color;
     }
 
-    &__list {
-        margin-top: 40px;
-        justify-content: space-between;
+    &:hover {
+      background: $green-brand-color;
+
+      &, & svg {
+        color: $white-color
+      }
     }
 
-    &__item {
-        align-items: center;
+    //&--all {
+    //  padding: 20px 21px 20px 52px;
+    //
+    //  &::before {
+    //    content: "";
+    //    position: absolute;
+    //    background: url(../../../assets/icons/products/all.svg);
+    //    width: 32px;
+    //    height: 32px;
+    //    left: 16px;
+    //    top: 30%;
+    //  }
+    //
+    //  &:active {
+    //    color: $green-brand-color;
+    //    border: 1px solid $green-brand-color;
+    //  }
+    //}
+    //
+    //&--bundles {
+    //  padding: 20px 24px 20px 52px;
+    //
+    //  &::before {
+    //    content: "";
+    //    position: absolute;
+    //    background: url(../../../assets/icons/products/bundles.svg);
+    //    width: 28px;
+    //    height: 28px;
+    //    left: 16px;
+    //    top: 30%;
+    //  }
+    //
+    //  &:active {
+    //    color: $green-brand-color;
+    //    border: 1px solid $green-brand-color;
+    //  }
+    //}
+    //
+    //&--herbs {
+    //  padding: 20px 30px 20px 60px;
+    //
+    //  &::before {
+    //    content: "";
+    //    position: absolute;
+    //    background: url(../../../assets/icons/products/herbs.svg);
+    //    width: 28px;
+    //    height: 28px;
+    //    left: 16px;
+    //    top: 30%;
+    //  }
+    //
+    //  &:active {
+    //    color: $green-brand-color;
+    //    border: 1px solid $green-brand-color;
+    //  }
+    //}
+    //
+    //&--vegetables {
+    //  padding: 20px 32px 20px 64px;
+    //
+    //  &::before {
+    //    content: "";
+    //    position: absolute;
+    //    background: url(../../../assets/icons/products/vegetables.svg);
+    //    width: 32px;
+    //    height: 32px;
+    //    left: 16px;
+    //    top: 30%;
+    //  }
+    //
+    //  &:active {
+    //    color: $green-brand-color;
+    //    border: 1px solid $green-brand-color;
+    //  }
+    //}
+    //
+    //&--fruits {
+    //  padding: 20px 36px 20px 60px;
+    //
+    //  &::before {
+    //    content: "";
+    //    position: absolute;
+    //    background: url(../../../assets/icons/products/fruits.svg);
+    //    width: 28px;
+    //    height: 28px;
+    //    left: 16px;
+    //    top: 30%;
+    //  }
+    //
+    //  &:active {
+    //    color: $green-brand-color;
+    //    border: 1px solid $green-brand-color;
+    //  }
+    //}
+    //
+    //&--supplies {
+    //  padding: 20px 31px 20px 56px;
+    //
+    //  &::before {
+    //    content: "";
+    //    position: absolute;
+    //    background: url(../../../assets/icons/products/supplies.svg);
+    //    width: 24px;
+    //    height: 24px;
+    //    left: 16px;
+    //    top: 30%;
+    //  }
+    //
+    //  &:active {
+    //    color: $green-brand-color;
+    //    border: 1px solid $green-brand-color;
+    //  }
+    //}
+    //
+    //&--flowers {
+    //  padding: 20px 30px 20px 64px;
+    //
+    //  &::before {
+    //    content: "";
+    //    position: absolute;
+    //    background: url(../../../assets/icons/products/flowers.svg);
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    width: 32px;
+    //    height: 32px;
+    //    left: 16px;
+    //    top: 30%;
+    //  }
 
+    //&:active {
+    //  color: $green-brand-color;
+    //  border: 1px solid $green-brand-color;
+    //}
+    //}
+  }
+
+  &__grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 425px);
+    grid-gap: 30px;
+  }
+
+  &__product {
+    position: relative;
+    padding: 28px;
+    // width: 335px;
+    // height: 425px;
+    border: 2px solid #EFEFEF;
+    border-radius: 8px;
+  }
+
+  &__favorite {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 1px solid $light-grey-stroke-color;
+    background-color: $white-color;
+    border-radius: 100%;
+    right: 12px;
+    top: 12px;
+    display: grid;
+    place-content: center;
+    transition: tranform ;
+
+    svg {
+      color: $yellow-color;
     }
 
-    &__link {
-        position: relative;
-        padding: 20px 0;
-        background-color: $white-color;
-        border: 2px solid #EFEFEF;
-        border-radius: 8px;
-        text-decoration: none;
-        color: $text-primary-color;
+    &--active, &:hover{
+      background: $yellow-color;
 
-        &--all {
-            padding: 20px 21px 20px 52px;
+      svg{
+        color: $white-color;
+      }
+    }
+    &--active{
+      animation: rotate 1.5s linear infinite;
+    }
+  }
 
-            &::before {
-                content: "";
-                position: absolute;
-                background: url(../../../assets/icons/products/all.svg);
-                width: 32px;
-                height: 32px;
-                left: 16px;
-                top: 30%;
-            }
+  &__image {
+    height: 294px;
+    background-repeat: no-repeat;
+    background-size: 265px;
+    background-position: top;
+    border-radius: 12px;
 
-            &:active {
-                color: $green-brand-color;
-                border: 1px solid $green-brand-color;
-            }
-        }
-
-        &--bundles {
-            padding: 20px 24px 20px 52px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background: url(../../../assets/icons/products/bundles.svg);
-                width: 28px;
-                height: 28px;
-                left: 16px;
-                top: 30%;
-            }
-
-            &:active {
-                color: $green-brand-color;
-                border: 1px solid $green-brand-color;
-            }
-        }
-
-        &--herbs {
-            padding: 20px 30px 20px 60px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background: url(../../../assets/icons/products/herbs.svg);
-                width: 28px;
-                height: 28px;
-                left: 16px;
-                top: 30%;
-            }
-
-            &:active {
-                color: $green-brand-color;
-                border: 1px solid $green-brand-color;
-            }
-        }
-
-        &--vegetables {
-            padding: 20px 32px 20px 64px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background: url(../../../assets/icons/products/vegetables.svg);
-                width: 32px;
-                height: 32px;
-                left: 16px;
-                top: 30%;
-            }
-
-            &:active {
-                color: $green-brand-color;
-                border: 1px solid $green-brand-color;
-            }
-        }
-
-        &--fruits {
-            padding: 20px 36px 20px 60px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background: url(../../../assets/icons/products/fruits.svg);
-                width: 28px;
-                height: 28px;
-                left: 16px;
-                top: 30%;
-            }
-
-            &:active {
-                color: $green-brand-color;
-                border: 1px solid $green-brand-color;
-            }
-        }
-
-        &--supplies {
-            padding: 20px 31px 20px 56px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background: url(../../../assets/icons/products/supplies.svg);
-                width: 24px;
-                height: 24px;
-                left: 16px;
-                top: 30%;
-            }
-
-            &:active {
-                color: $green-brand-color;
-                border: 1px solid $green-brand-color;
-            }
-        }
-
-        &--flowers {
-            padding: 20px 30px 20px 64px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background: url(../../../assets/icons/products/flowers.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 32px;
-                height: 32px;
-                left: 16px;
-                top: 30%;
-            }
-
-            &:active {
-                color: $green-brand-color;
-                border: 1px solid $green-brand-color;
-            }
-        }
+    &--cilantro {
+      background-image: url(../../../assets/img/cilantro.png);
     }
 
-    &__grid {
-        margin-top: 45px;
-        display: grid;
-        grid-template-columns: repeat(3, 350px);
-        // grid-template-rows: repeat(2, 425px);
-        column-gap: 45px;
-        row-gap: 30px;
+    &--corn {
+      background-image: url(../../../assets/img/corn.png);
     }
 
-    &__product {
-        position: relative;
-        padding: 28px;
-        // width: 335px;
-        // height: 425px;
-        border: 2px solid #EFEFEF;
-        border-radius: 8px;
+    &--spinach {
+      background-image: url(../../../assets/img/spinach.png);
+    }
+  }
+
+  &__ratung {
+    display: flex;
+
+    img {
+      margin-right: 13px;
     }
 
-    &__favorite {
-        display: block;
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        padding: 8px;
-        border: 1px solid $light-grey-stroke-color;
-        background-color: $white-color;
-        border-radius: 100%;
-        right: 12px;
-        top: 12px;
-        svg{
-            color: $yellow-color;
-        }
+    div {
+      color: $text-secondary-color;
+    }
+  }
+
+  &__name {
+    display: block;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: $text-primary-color;
+    text-decoration: none;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+
+
+    div {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 54px;
+      color: $text-primary-color;
     }
 
-    &__image {
-        // width: 294px;
-        height: 294px;
-        // box-shadow: inset 5px 5px 5px black;
-        background-repeat: no-repeat;
-        background-size: 265px;
-        background-position: top;
-        border-radius: 12px;
-
-        &--cilantro{
-            background-image: url(../../../assets/img/cilantro.png);
-        }
-
-        &--corn{
-            background-image: url(../../../assets/img/corn.png);
-        }
-
-        &--spinach{
-            background-image: url(../../../assets/img/spinach.png);
-        }
+    a {
+      border: 1px solid #EFEFEF;
+      border-radius: 8px;
+      width: 24px;
+      height: 24px;
+      padding: 12px;
     }
-
-    &__ratung {
-        display: flex;
-
-        img {
-            margin-right: 13px;
-        }
-
-        div {
-            color: $text-secondary-color;
-        }
-    }
-
-    &__name {
-        display: block;
-        margin-top: 8px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 25px;
-        color: $text-primary-color;
-        text-decoration: none;
-    }
-
-    &__price {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 8px;
+  }
+}
 
 
-        div {
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 54px;
-            color: $text-primary-color;
-        }
-
-        a {
-            border: 1px solid #EFEFEF;
-            border-radius: 8px;
-            width: 24px;
-            height: 24px;
-            padding: 12px;
-        }
-    }
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
