@@ -1,14 +1,21 @@
 .home-banner {
     padding-top: 48px;
     height: 626px;
+
+    &__background {
     
-    &__img{
-        background-image: url(../../../assets/img/testimonials/Component\ 1.png);
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-size: contain;
+    }
+
+    &__frame {
         
-   }
+    }
+
+    &__info {
+        width: 521px;
+    }
+
+
+
 
     h2 {
         width: 500px;
