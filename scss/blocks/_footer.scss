@@ -4,11 +4,17 @@
 
     &__nav {
         gap: 75px;
+
+        @media screen and (min-width: 1075) {}
+
     }
 
     &__list {
         gap: 64px;
-        // list-style: none;
+    }
+
+    &__logotype {
+        text-align: center;
     }
 
     &__item {
@@ -47,8 +53,12 @@
             color: $text-secondary-color;
         }
 
-        a{
+        a {
             color: $green-brand-color;
+
+            &:hover {
+                color: black;
+            }
         }
     }
 }

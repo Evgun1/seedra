@@ -1,4 +1,5 @@
 .button {
+    display: block;
     padding: 11px 33px;
     background-color: $green-brand-color;
     border-radius: 8px;
@@ -7,16 +8,19 @@
 
     &:hover {
         background-color: $hover-color;
+        color: $white-color;
     }
 
     &:active {
         background-color: $primary-color;
+        color: $white-color;
     }
 }
 
 
 
 .button__transparent {
+    display: block;
     padding: 11px 33px;
     background-color: $white-color;
     border-radius: 8px;
@@ -25,11 +29,14 @@
 
     &:hover {
         background-color: $invisible-green-color;
+        text-decoration: none;
+        color: $text-primary-color;
     }
 
     &:active {
         background-color: $invisible-green-color;
         border: 1px solid $green-brand-color;
         border-radius: 8px;
+        color: $green-brand-color;
     }
 }
