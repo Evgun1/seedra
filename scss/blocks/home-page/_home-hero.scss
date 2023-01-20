@@ -2,46 +2,93 @@
     padding-top: 32px;
 
     &__banner {
-        // background-color: $light-grey-stroke-color;
+        display: flex;
+        flex-direction: column;
+        padding: 250px 11px 50px 11px;
         border-radius: 24px;
-        height: 455px;
-        padding: 48px 76px 52px 76px;
+        // height: 455px;
+        background-image: 
+        url(../../../assets/img/hero/image\ 2.png),
+        url(../../../assets/img/hero/leave_bg\ 2.png);
+        background-size: 50%, contain;
+        background-position: top center, left top;
         background-color: $light-grey-stroke-color ;
-        background-image:
-            url("../../assets/img/image\ 2.png"),
-            url("../../assets/img/leave_bg.png");
         background-repeat: no-repeat;
-        background-size: 395px, contain;
-        background-position: right bottom;
+
+        @media screen and (min-width: 765px) {
+            padding: 48px 243px 52px 76px;
+            background-size: 350px;
+            background-position: right;
+            background-image:
+                url("../../../assets/img/hero/image\ 1.png"),
+                url("../../assets/img/hero/leave_bg.png");
+
+        }
+
+        @media screen and (min-width: 992px) {
+            padding: 48px 460px 52px 76px;
+            background-size: 395px, contain;
+            background-position: right bottom;
+        }
     }
 
     &__title {
-        margin-bottom: 12px;
-        width: 650px;
-        font-size: 48px;
-        line-height: 54px;
+        // width: 379px;
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 10px;
+
+        @media screen and (min-width: 992px) {
+            // width: 650px;
+            font-size: 48px;
+            line-height: 54px;
+            margin-bottom: 12px;
+
+        }
     }
 
     &__text {
         font-weight: 300;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 28px;
-        width: 560px;
+        // width: 450px;
+        margin-top: 7px;
+
+        @media screen and (min-width: 992px) {
+            font-size: 16px;
+            line-height: 28px;
+            // width: 560px;
+        }
     }
 
     &__price {
-        align-items: centerd;
-        margin-top: 21px;
+        align-items: center;
+        // margin-top: 21px;
         width: 336px;
+        order: -1;
+
+        @media screen and (min-width: 765px) {
+            order: 0;
+        }
     }
 
     &__link {
+        height: 100%;
+
         &-price {
             font-weight: 600;
-            font-size: 42px;
-            line-height: 54px;
+            font-size: 32px;
+            line-height: 34px;
             color: $text-primary-color;
             margin: 0 21px 0 16px;
+
+
+            @media screen and(min-width: 992px) {
+                line-height: 54px;
+                font-size: 42px;
+
+            }
+
         }
 
         &-discount {
@@ -50,30 +97,52 @@
             line-height: 54px;
             color: $text-secondary-color;
         }
+
+        svg {
+            width: 32px;
+            height: 32px;
+
+            @media screen and (min-width:992px) {
+                width: 46px;
+                height: 46px;
+            }
+        }
     }
 
     &__btn {
-        margin-top: 36px;
+        margin-top: 18px;
         gap: 12px;
         cursor: pointer;
 
         a {
             text-decoration: none;
         }
+
+        @media screen and (min-width: 992px) {
+            margin-top: 36px;
+
+        }
     }
 
     &__subbanner {
         margin-top: 16px;
         background-color: rgba(255, 230, 46, 0.09);
-        background-image: url(../../assets/img/Group\ 2.png),
-            url(../../assets/img/Group\ 3.png);
+        background-image: url(../../../assets/img/hero/Group\ 3.png),
+            url(../../../assets/img/hero/Group\ 4.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left, right;
+        // background-size: contain;
+        background-position: left bottom, right bottom;
         border-radius: 12px;
-        padding: 23px 0;
+        padding: 32px 32px 56px 32px;
         text-align: center;
+
         // height: 104px;
+        @media screen and (min-width: 992px) {
+            background-image: url(../../assets/img/hero/Group\ 1.png),
+                url(../../assets/img/hero/Group\ 2.png);
+            padding: 23px 0;
+
+        }
 
         h2 {
             font-weight: 600;
