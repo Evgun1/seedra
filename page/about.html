@@ -1,10 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seedra</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/slick.css" /> -->
+    <link rel="stylesheet" href="../css/style.min.css">
+
 </head>
+
 <body>
-About Page
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <a href="#" class="header__logo">
+                    <img src="../assets/icons/logo/logo.svg" alt="">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list socials">
+                        <li class="header___item">
+                            <a href="#" class="header__link">
+                                ALL PRODUCTS
+                            </a>
+                        </li>
+                        <li class="header___item">
+                            <a href="#" class="header__link">
+                                ABOUT SEEDRA
+                            </a>
+                        </li>
+                        <li class="header___item">
+                            <a href="#" class="header__link">
+                                OUR BLOG
+                            </a>
+                        </li>
+                        <li class="header___item">
+                            <a href="#" class="header__link">
+                                CONTACTS
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- header__list -->
+                    <ul class="socials header__social">
+                        <li class="header__social-item ">
+                            <a href="#" class="socials--gray">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 8.87579C10.2797 8.87579 8.87577 10.2797 8.87577 12C8.87577 13.7203 10.2797 15.1242 12 15.1242C13.7203 15.1242 15.1242 13.7203 15.1242 12C15.1242 10.2797 13.7203 8.87579 12 8.87579ZM21.3703 12C21.3703 10.7063 21.382 9.42423 21.3094 8.13283C21.2367 6.63283 20.8945 5.30158 19.7976 4.2047C18.6984 3.10548 17.3695 2.76564 15.8695 2.69298C14.5758 2.62033 13.2937 2.63204 12.0023 2.63204C10.7086 2.63204 9.42655 2.62033 8.13515 2.69298C6.63515 2.76564 5.3039 3.10783 4.20702 4.2047C3.1078 5.30392 2.76796 6.63283 2.6953 8.13283C2.62265 9.42658 2.63436 10.7086 2.63436 12C2.63436 13.2914 2.62265 14.5758 2.6953 15.8672C2.76796 17.3672 3.11015 18.6985 4.20702 19.7953C5.30624 20.8945 6.63515 21.2344 8.13515 21.307C9.4289 21.3797 10.7109 21.368 12.0023 21.368C13.2961 21.368 14.5781 21.3797 15.8695 21.307C17.3695 21.2344 18.7008 20.8922 19.7976 19.7953C20.8969 18.6961 21.2367 17.3672 21.3094 15.8672C21.3844 14.5758 21.3703 13.2938 21.3703 12ZM12 16.807C9.33983 16.807 7.19296 14.6602 7.19296 12C7.19296 9.33986 9.33983 7.19298 12 7.19298C14.6601 7.19298 16.807 9.33986 16.807 12C16.807 14.6602 14.6601 16.807 12 16.807ZM17.0039 8.11876C16.3828 8.11876 15.8812 7.6172 15.8812 6.99611C15.8812 6.37501 16.3828 5.87345 17.0039 5.87345C17.625 5.87345 18.1266 6.37501 18.1266 6.99611C18.1267 7.14359 18.0978 7.28966 18.0415 7.42595C17.9851 7.56224 17.9024 7.68607 17.7981 7.79036C17.6939 7.89464 17.57 7.97733 17.4337 8.03368C17.2974 8.09004 17.1514 8.11895 17.0039 8.11876Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__social-item ">
+                            <a href="#" class="socials--gray">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 12.0558C2 17.0275 5.61083 21.1617 10.3333 22V14.7775H7.83333V12H10.3333V9.7775C10.3333 7.2775 11.9442 5.88917 14.2225 5.88917C14.9442 5.88917 15.7225 6 16.4442 6.11083V8.66667H15.1667C13.9442 8.66667 13.6667 9.2775 13.6667 10.0558V12H16.3333L15.8892 14.7775H13.6667V22C18.3892 21.1617 22 17.0283 22 12.0558C22 6.525 17.5 2 12 2C6.5 2 2 6.525 2 12.0558Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- header__social -->
+                    <form action="" class="header__search">
+                        <label>
+                            <input type="text">
+                        </label>
+                        <button type="submit">submit</button>
+                    </form>
+                    <!-- /.header__search -->
+                </nav>
+                <!-- header__nav -->
+                <div class="header__actions socials">
+                    <a href="" class="header__actions-link socials--green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.6573 5.80092C18.6273 4.78233 17.2619 4.16064 15.8078 4.04815C14.3538 3.93566 12.9068 4.33979 11.7284 5.18754C10.4921 4.28054 8.9533 3.86926 7.42187 4.03652C5.89044 4.20379 4.48014 4.93718 3.47497 6.08901C2.46981 7.24083 1.94444 8.72554 2.00466 10.2441C2.06488 11.7627 2.70623 13.2024 3.79954 14.2733L9.83364 20.2346C10.3389 20.7251 11.0195 21 11.7284 21C12.4374 21 13.1179 20.7251 13.6232 20.2346L19.6573 14.2733C20.7918 13.1474 21.4286 11.6245 21.4286 10.0371C21.4286 8.44971 20.7918 6.9268 19.6573 5.80092V5.80092ZM18.2872 12.9507L12.2531 18.9024C12.1845 18.9708 12.1027 19.0251 12.0127 19.0621C11.9226 19.0992 11.826 19.1183 11.7284 19.1183C11.6308 19.1183 11.5342 19.0992 11.4442 19.0621C11.3541 19.0251 11.2724 18.9708 11.2037 18.9024L5.1696 12.9219C4.40757 12.1536 3.98086 11.1215 3.98086 10.0467C3.98086 8.97186 4.40757 7.93977 5.1696 7.17145C5.94612 6.41525 6.99341 5.99123 8.08463 5.99123C9.17584 5.99123 10.2231 6.41525 10.9997 7.17145C11.09 7.26128 11.1975 7.33258 11.3159 7.38124C11.4343 7.4299 11.5613 7.45495 11.6895 7.45495C11.8178 7.45495 11.9448 7.4299 12.0632 7.38124C12.1816 7.33258 12.2891 7.26128 12.3794 7.17145C13.156 6.41525 14.2032 5.99123 15.2945 5.99123C16.3857 5.99123 17.433 6.41525 18.2095 7.17145C18.982 7.9297 19.4227 8.9562 19.4372 10.0311C19.4518 11.1059 19.039 12.1436 18.2872 12.9219V12.9507Z"
+                                fill="currentColor" />
+                        </svg>
+
+                    </a>
+                    <a href="" class="header__actions-link socials--green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.88666 21.3333C9.71509 21.3333 10.3867 20.6618 10.3867 19.8333C10.3867 19.0049 9.71509 18.3333 8.88666 18.3333C8.05823 18.3333 7.38666 19.0049 7.38666 19.8333C7.38666 20.6618 8.05823 21.3333 8.88666 21.3333Z"
+                                fill="currentColor" />
+                            <path
+                                d="M18 21.3333C18.8284 21.3333 19.5 20.6618 19.5 19.8333C19.5 19.0049 18.8284 18.3333 18 18.3333C17.1716 18.3333 16.5 19.0049 16.5 19.8333C16.5 20.6618 17.1716 21.3333 18 21.3333Z"
+                                fill="currentColor" />
+                            <path
+                                d="M22.0533 3.58C21.9913 3.50353 21.9131 3.44174 21.8243 3.39909C21.7356 3.35644 21.6385 3.33399 21.54 3.33333H7.66001L8.09335 4.66667H20.6667L18.8867 12.6667H8.88668L5.84001 3.02C5.80706 2.91764 5.74983 2.82477 5.67321 2.74931C5.5966 2.67386 5.50287 2.61806 5.40001 2.58667L2.66668 1.74667C2.58263 1.72084 2.49432 1.71182 2.40679 1.72012C2.31926 1.72843 2.23422 1.75389 2.15653 1.79506C1.99962 1.8782 1.88217 2.02026 1.83001 2.19C1.77785 2.35974 1.79526 2.54325 1.8784 2.70015C1.96154 2.85706 2.10361 2.97451 2.27335 3.02667L4.66668 3.76L7.72668 13.4267L6.63335 14.32L6.54668 14.4067C6.27624 14.7183 6.12295 15.1145 6.11321 15.5271C6.10348 15.9396 6.23791 16.3426 6.49335 16.6667C6.67505 16.8876 6.90595 17.063 7.16757 17.1788C7.42919 17.2945 7.71427 17.3475 8.00001 17.3333H19.1267C19.3035 17.3333 19.4731 17.2631 19.5981 17.1381C19.7231 17.013 19.7933 16.8435 19.7933 16.6667C19.7933 16.4899 19.7231 16.3203 19.5981 16.1953C19.4731 16.0702 19.3035 16 19.1267 16H7.89335C7.81658 15.9974 7.74178 15.975 7.67619 15.935C7.61059 15.8951 7.55641 15.8389 7.51888 15.7718C7.48134 15.7048 7.46173 15.6293 7.46193 15.5524C7.46213 15.4756 7.48213 15.4002 7.52001 15.3333L9.12668 14H19.42C19.5741 14.0038 19.7248 13.954 19.8463 13.8592C19.9679 13.7644 20.0528 13.6304 20.0867 13.48L22.2 4.14667C22.2203 4.04728 22.2176 3.94458 22.1922 3.84638C22.1668 3.74818 22.1193 3.65707 22.0533 3.58Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <button class="hamburger">
+                        <span class="hamburger__botton"></span>
+                        <span class="hamburger__center"></span>
+                        <span class="hamburger__top"></span>
+                    </button>
+
+                </div>
+                <!-- header__actions -->
+            </div>
+            <!-- /.header__row -->
+        </div>
+        <!-- container -->
+    </header>
+    <main class="main">
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero__main">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <h2 class="about-hero__title">SEEDRA Corn - Bodacious Hybrid Seeds for Indoor and Outdoor
+                            Planting</h2>
+                        <div class="about-hero__category">
+                            <button class="about-hero__btn">
+
+                                <span>AVAILABLE</span>
+                            </button>
+                            <button class="about-hero__btn">
+
+                                <span>VEGETABLES</span>
+                            </button>
+                        </div>
+                        <div>
+                            <div>
+                                <span>
+                                    Size
+                                </span>
+                                <div>
+                                    2 PACK
+                                </div>
+                            </div>
+                            <div>
+                                <button>
+                                    -
+                                </button>
+                                <div>
+                                    2
+                                </div>
+                                <button>
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div>
+                                    <img src="" alt="">
+                                    <div>
+                                        1 pack
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>
+                                        start from
+                                    </span>
+                                    <div>
+                                        $1,56
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="" alt="">
+                                    <div>
+                                        2 pack
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>
+                                        start from
+                                    </span>
+                                    <div>
+                                        $1,56
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="" alt="">
+                                    <div>
+                                        3 pack
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>
+                                        start from
+                                    </span>
+                                    <div>
+                                        $1,56
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="" alt="">
+                                    <div>
+                                        4 pack
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>
+                                        start from
+                                    </span>
+                                    <div>
+                                        $1,56
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="" alt="">
+                                    <div>
+                                        5 pack
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>
+                                        start from
+                                    </span>
+                                    <div>
+                                        $1,56
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <div>
+                                <span>
+                                    $15.56
+                                </span>
+                                <div>
+                                    $12.56
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <button>
+                                    Add to card
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="footer__nav socials">
+                    <ul class="footer__list footer__list-left socials">
+                        <li class="footer__item">
+                            <a href="#"> ALL PRODUCTS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> ABOUT SEEDRA</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> OUR BLOG</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="footer__logotype">
+                        <img src="./assets/icons/logo/logo.svg" alt="">
+                    </a>
+                    <ul class="footer__list footer__list-right socials">
+                        <li class="footer__item">
+                            <a href="#"> Terms&Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__line"></div>
+
+                <div class="footer__social socials">
+                    <ul class="socials">
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 8.87579C10.2797 8.87579 8.87577 10.2797 8.87577 12C8.87577 13.7203 10.2797 15.1242 12 15.1242C13.7203 15.1242 15.1242 13.7203 15.1242 12C15.1242 10.2797 13.7203 8.87579 12 8.87579ZM21.3703 12C21.3703 10.7063 21.382 9.42423 21.3094 8.13283C21.2367 6.63283 20.8945 5.30158 19.7976 4.2047C18.6984 3.10548 17.3695 2.76564 15.8695 2.69298C14.5758 2.62033 13.2937 2.63204 12.0023 2.63204C10.7086 2.63204 9.42655 2.62033 8.13515 2.69298C6.63515 2.76564 5.3039 3.10783 4.20702 4.2047C3.1078 5.30392 2.76796 6.63283 2.6953 8.13283C2.62265 9.42658 2.63436 10.7086 2.63436 12C2.63436 13.2914 2.62265 14.5758 2.6953 15.8672C2.76796 17.3672 3.11015 18.6985 4.20702 19.7953C5.30624 20.8945 6.63515 21.2344 8.13515 21.307C9.4289 21.3797 10.7109 21.368 12.0023 21.368C13.2961 21.368 14.5781 21.3797 15.8695 21.307C17.3695 21.2344 18.7008 20.8922 19.7976 19.7953C20.8969 18.6961 21.2367 17.3672 21.3094 15.8672C21.3844 14.5758 21.3703 13.2938 21.3703 12ZM12 16.807C9.33983 16.807 7.19296 14.6602 7.19296 12C7.19296 9.33986 9.33983 7.19298 12 7.19298C14.6601 7.19298 16.807 9.33986 16.807 12C16.807 14.6602 14.6601 16.807 12 16.807ZM17.0039 8.11876C16.3828 8.11876 15.8812 7.6172 15.8812 6.99611C15.8812 6.37501 16.3828 5.87345 17.0039 5.87345C17.625 5.87345 18.1266 6.37501 18.1266 6.99611C18.1267 7.14359 18.0978 7.28966 18.0415 7.42595C17.9851 7.56224 17.9024 7.68607 17.7981 7.79036C17.6939 7.89464 17.57 7.97733 17.4337 8.03368C17.2974 8.09004 17.1514 8.11895 17.0039 8.11876Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 12.0558C2 17.0275 5.61083 21.1617 10.3333 22V14.7775H7.83333V12H10.3333V9.7775C10.3333 7.2775 11.9442 5.88917 14.2225 5.88917C14.9442 5.88917 15.7225 6 16.4442 6.11083V8.66667H15.1667C13.9442 8.66667 13.6667 9.2775 13.6667 10.0558V12H16.3333L15.8892 14.7775H13.6667V22C18.3892 21.1617 22 17.0283 22 12.0558C22 6.525 17.5 2 12 2C6.5 2 2 6.525 2 12.0558Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

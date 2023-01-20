@@ -10,6 +10,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" type="text/css" href="./css/slick.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css">
 
 </head>
@@ -632,13 +633,16 @@
         </section>
         <!-- home-blogs -->
         <section class="home-testimonials">
-            <div class="container">
-                <h2>
-                    What out clients say
-                </h2>
-                <div class="home-testimonials__testimonial">
-                    <div class="home-testimonials__review">
-                        <div class="home-testimonials__title">
+            <!-- <div class="container"> -->
+            <h2 class="home-testimonials__title">
+                What out clients say
+            </h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-title">
                             <img src="./assets/icons/icon/Ellipse 5.png" alt="">
                             <div>
                                 <h3>
@@ -649,16 +653,18 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="./assets/icons/activs/rating.png" alt="" class="home-testimonials__rating">
+                        <img src="./assets/icons/activs/rating.png" alt="" class="swiper-rating">
                         <p>
-                            SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional instructions created
+                            SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional instructions
+                            created
                             by PhD Helga George
-                            Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom - our seeds
+                            Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom -
+                            our seeds
                             were tested and have the best germination ratings.
                         </p>
                     </div>
-                    <!-- <div class="home-testimonials__review">
-                        <div class="home-testimonials__title">
+                    <div class="swiper-slide">
+                        <div class="swiper-title">
                             <img src="./assets/icons/icon/Ellipse 5.png" alt="">
                             <div>
                                 <h3>
@@ -669,16 +675,18 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="./assets/icons/activs/rating.png" alt="" class="home-testimonials__rating">
+                        <img src="./assets/icons/activs/rating.png" alt="" class="swiper-rating">
                         <p>
-                            SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional instructions created
+                            SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional instructions
+                            created
                             by PhD Helga George
-                            Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom - our seeds
+                            Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom -
+                            our seeds
                             were tested and have the best germination ratings.
                         </p>
                     </div>
-                    <div class="home-testimonials__review">
-                        <div class="home-testimonials__title">
+                    <div class="swiper-slide">
+                        <div class="swiper-title">
                             <img src="./assets/icons/icon/Ellipse 5.png" alt="">
                             <div>
                                 <h3>
@@ -689,22 +697,31 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="./assets/icons/activs/rating.png" alt="" class="home-testimonials__rating">
+                        <img src="./assets/icons/activs/rating.png" alt="" class="swiper-rating">
                         <p>
-                            SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional instructions created
+                            SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and professional instructions
+                            created
                             by PhD Helga George
-                            Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom - our seeds
+                            Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom -
+                            our seeds
                             were tested and have the best germination ratings.
                         </p>
-                    </div> -->
-                    <!-- <div class="home-testimonials__slides">
-                        <span class="sliders"></span>
-                        <span class="sliders sliders-transparent"></span>
-                        <span class="sliders sliders-transparent"></span>
-                    </div> -->
+                    </div>
+                    <!-- ... -->
                 </div>
-                <!-- /.home-testimonials__testimonial -->
-            </div>
+
+                <!-- If we need navigation buttons
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination" ></div>
+                </div>
+
+
+                <!-- </div> -->
         </section>
         <!-- /.home-testimonials -->
         <section class="home-banner">
@@ -810,6 +827,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
