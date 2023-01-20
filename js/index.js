@@ -6,7 +6,7 @@
     })
 }())
 
-
+// TODO: нахіба тобі 2 пагінації?
 const swiper = new Swiper('.swiper', {
     slidesPerView: "auto",
     spaceBetween: 30,
