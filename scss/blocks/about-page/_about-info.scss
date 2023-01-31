@@ -1,0 +1,120 @@
+.about-info {
+    padding-bottom: 34px;
+
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 80px;
+    }
+
+    &__frame {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        ul {
+            margin-left: 23px;
+        }
+
+        @media screen and (min-width:1024px) {
+            flex-direction: row;
+            gap: 65px;
+        }
+
+    }
+
+    &__list {
+        display: block;
+        margin: 0;
+
+        @media screen and (min-width:1024px) {
+            width: 100%;
+            max-width: 570px;
+        }
+    }
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        padding-bottom: 17px;
+
+        @media screen and (min-width:768px) {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+        }
+
+        @media screen and (min-width:1024px) {
+
+            padding-bottom: 32px;
+
+            &::after {
+                display: block;
+                content: "";
+                border-bottom: 1px solid $light-geen-color;
+                padding-top: 24px;
+            }
+        }
+    }
+
+    &__paragraph {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: $text-primary-color;
+    }
+
+    &__plate {
+        height: 100%;
+        border: 1px solid $light-grey-stroke-color;
+        border-radius: 12px;
+        padding: 26px 24px;
+        // max-height: 198px;
+
+        @media screen and (min-width:1024px) {
+            width: 100%;
+            max-width: 475px;
+        }
+
+        @media screen and (min-width:1440px) {
+            width: 100%;
+            max-width: 475px;
+        }
+    }
+
+    &-plate__text {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // justify-content: space-between;
+
+        span {
+            color: $text-secondary-color;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 178.19%;
+        }
+
+        div {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 178.19%;
+            color: $text-primary-color;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 17px;
+        }
+
+        &:not(:last-child)::after {
+            border-bottom: 1px solid $light-grey-stroke-color;
+            padding-top: 17px;
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            grid-column: 1/3;
+        }
+    }
+}
