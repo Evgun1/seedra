@@ -1,3 +1,9 @@
+.home-products__container{
+	@media screen and (max-width:425px){
+		padding: 0 0 0 15px;
+	}
+}
+
 .home-products {
 	padding-top: 30px;
 
@@ -68,10 +74,6 @@
 			border: 1px solid $invisible-green-color;
 			text-decoration: none;
 			color: $text-primary-color;
-			// &,
-			// & svg {
-			// 	color: $white-color
-			// }
 		}
 
 		&:active {
@@ -79,169 +81,47 @@
 			border: 1px solid $green-brand-color;
 		}
 
-		//&--all {
-		//  padding: 20px 21px 20px 52px;
-		//
-		//  &::before {
-		//    content: "";
-		//    position: absolute;
-		//    background: url(../../../assets/icons/products/all.svg);
-		//    width: 32px;
-		//    height: 32px;
-		//    left: 16px;
-		//    top: 30%;
-		//  }
-		//
-		//  &:active {
-		//    color: $green-brand-color;
-		//    border: 1px solid $green-brand-color;
-		//  }
-		//}
-		//
-		//&--bundles {
-		//  padding: 20px 24px 20px 52px;
-		//
-		//  &::before {
-		//    content: "";
-		//    position: absolute;
-		//    background: url(../../../assets/icons/products/bundles.svg);
-		//    width: 28px;
-		//    height: 28px;
-		//    left: 16px;
-		//    top: 30%;
-		//  }
-		//
-		//  &:active {
-		//    color: $green-brand-color;
-		//    border: 1px solid $green-brand-color;
-		//  }
-		//}
-		//
-		//&--herbs {
-		//  padding: 20px 30px 20px 60px;
-		//
-		//  &::before {
-		//    content: "";
-		//    position: absolute;
-		//    background: url(../../../assets/icons/products/herbs.svg);
-		//    width: 28px;
-		//    height: 28px;
-		//    left: 16px;
-		//    top: 30%;
-		//  }
-		//
-		//  &:active {
-		//    color: $green-brand-color;
-		//    border: 1px solid $green-brand-color;
-		//  }
-		//}
-		//
-		//&--vegetables {
-		//  padding: 20px 32px 20px 64px;
-		//
-		//  &::before {
-		//    content: "";
-		//    position: absolute;
-		//    background: url(../../../assets/icons/products/vegetables.svg);
-		//    width: 32px;
-		//    height: 32px;
-		//    left: 16px;
-		//    top: 30%;
-		//  }
-		//
-		//  &:active {
-		//    color: $green-brand-color;
-		//    border: 1px solid $green-brand-color;
-		//  }
-		//}
-		//
-		//&--fruits {
-		//  padding: 20px 36px 20px 60px;
-		//
-		//  &::before {
-		//    content: "";
-		//    position: absolute;
-		//    background: url(../../../assets/icons/products/fruits.svg);
-		//    width: 28px;
-		//    height: 28px;
-		//    left: 16px;
-		//    top: 30%;
-		//  }
-		//
-		//  &:active {
-		//    color: $green-brand-color;
-		//    border: 1px solid $green-brand-color;
-		//  }
-		//}
-		//
-		//&--supplies {
-		//  padding: 20px 31px 20px 56px;
-		//
-		//  &::before {
-		//    content: "";
-		//    position: absolute;
-		//    background: url(../../../assets/icons/products/supplies.svg);
-		//    width: 24px;
-		//    height: 24px;
-		//    left: 16px;
-		//    top: 30%;
-		//  }
-		//
-		//  &:active {
-		//    color: $green-brand-color;
-		//    border: 1px solid $green-brand-color;
-		//  }
-		//}
-		//
-		//&--flowers {
-		//  padding: 20px 30px 20px 64px;
-		//
-		//  &::before {
-		//    content: "";
-		//    position: absolute;
-		//    background: url(../../../assets/icons/products/flowers.svg);
-		//    background-repeat: no-repeat;
-		//    background-size: contain;
-		//    width: 32px;
-		//    height: 32px;
-		//    left: 16px;
-		//    top: 30%;
-		//  }
 
-		//&:active {
-		//  color: $green-brand-color;
-		//  border: 1px solid $green-brand-color;
-		//}
-		//}
 	}
 
 	&__grid {
 		margin-top: 45px;
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		justify-content: center;
-		grid-gap: 11px;
 
+		// @media screen and (min-width: 768px) {
+		// 	grid-gap: 30px;
+		// 	grid-template-columns: repeat(2, 1fr);
+
+		// }
+
+		// @media screen and (min-width: 1065px) {
+		// 	grid-template-columns: repeat(3, 1fr);
+		// 	grid-gap: 30px;
+		// }
+	}
+
+	&__wrap {
 		@media screen and (min-width: 768px) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 			grid-gap: 30px;
-			grid-template: repeat(3, minmax(512px, 0))/ repeat(2, 1fr);
-
 		}
 
-		@media screen and (min-width: 1065px) {
-			grid-template: repeat(2, 1fr)/ repeat(3, 1fr);
-			grid-gap: 30px;
+		@media screen and (min-width:1400px) {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 
 	&__product {
 		position: relative;
 		padding: 28px 11px;
-		// width: 335px;
-		// height: 425px;
 		border: 2px solid #EFEFEF;
 		border-radius: 8px;
+		max-width: 319px;
+		height: 100%;
 
+		@media screen and (min-width: 768px) {
+			max-width: none;
+		}
 		@media screen and (min-width:992px) {
 			padding: 28px;
 

@@ -6,16 +6,44 @@
     })
 }())
 
-const swiper = new Swiper('.swiper', {
+const testimonialsSliders = new Swiper('.home-testimonials__swiper', {
     slidesPerView: "auto",
-    spaceBetween: 30,
-    centeredSlides: true,
+    slideActiveClass: 'home-testimonials__slide--active',
+    spaceBetween: 11,
     loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        el: '.swiper-pagination',
-    },
-
-
+    breakpoints: {
+        768: {
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                el: '.swiper-pagination',
+            }
+        }
+    }
 });
+
+const productsSlider = new Swiper('.home-products__grid', {
+    slidesPerView: "auto",
+    spaceBetween: 11,
+    breakpoints: {
+        768: {
+            spaceBetween: 0,
+            enabled: false,
+            init: false
+        }
+    }
+})
+
+const blogsSlider = new Swiper('.home-blogs__wrapper-slide', {
+    slidesPerView: "auto",
+    spaceBetween: 11,
+    breakpoints: {
+        768: {
+            spaceBetween: 0,
+            enabled: false,
+            init: false
+        }
+    }
+})
